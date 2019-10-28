@@ -1,0 +1,158 @@
+@import "./mixins";
+
+.header-navbar {
+  position: relative;
+}
+
+.header-list {
+  &__header-logo {
+    position: absolute;
+    top: -58px;
+    left: 22px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    @include smallScreen {
+      width: 50px;
+      height: 50px;
+      left: 10px;
+    }
+  }
+}
+
+/* Navigation bar */
+
+.navbar-brand {
+  width: 150px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+.navbar .navnar-dropadown-menu {
+  background: #82412f;
+  position: relative;
+}
+
+.navbar .navnar-dropadown-menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  width: 30px;
+  height: 18px;
+  background: #82412f;
+}
+
+.nav-item {
+  &__nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.1rem;
+    color: rgb(19, 4, 4);
+    color: #110501;
+    font-size: 17px;
+    font-weight: 700;
+    display: inline;
+    margin-right: 20px;
+    &:hover {
+      color: #f8a036;
+      text-decoration: none;
+      color: #f8a036;
+    }
+  }
+}
+
+.navbar-collapse {
+  z-index: 9999;
+}
+
+.dropdown-item {
+  background: #82412f;
+  text-align: left;
+  &:hover {
+    text-decoration: none;
+    color: color(topLinkColor);
+    background-color: #82412f;
+  }
+}
+
+.dropdown-menu {
+  left: -50%;
+  top: 32px;
+  padding: 11px 16px;
+}
+
+.dropdown-menu a {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  @include largeScreen {
+    display: none;
+  }
+}
+
+.dropdown.active {
+  margin-left: 17px;
+}
+
+.navnar-dropadown-menu:hover {
+  text-decoration: none;
+  color: #f8a036;
+}
+
+.nav-list-item {
+  float: right;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#nav-link-about {
+  margin-right: 35px;
+}
+
+.navnar-dropadown-menu {
+  > a {
+    &:not(:last-child) {
+      border-style: solid;
+      border-bottom-style: outset;
+      border-bottom-color: white;
+      border-bottom-width: 1px;
+    }
+  }
+}
+
+.navnar-dropadown-menu {
+  > a {
+    width: 100%;
+    margin: 0;
+    padding: 7px 75px 10px 5px;
+    font-size: 14px;
+  }
+}
+
+/* Second Logo */
+
+.list-item-logo {
+  &__navbar-menu-logo-right {
+    position: absolute;
+    top: 38px;
+    right: 58px;
+    width: 155px;
+    height: 150px;
+    z-index: 1;
+  }
+  @include largeScreen {
+    visibility: hidden;
+  }
+}

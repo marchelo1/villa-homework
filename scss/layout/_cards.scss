@@ -1,0 +1,64 @@
+.cards {
+  padding-top: 80px;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-bottom: 51px;
+  margin-left: 0px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 2px 25px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 2px 25px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 25px -6px rgba(0, 0, 0, 0.4);
+  border-top: color(borderBottom);
+  &__card-text-h1 {
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+  &__card-text-p {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px 0;
+  }
+}
+
+.custom-card-btn {
+  background-color: color(primaryBtn);
+  border-color: color(borderOnlyColor);
+  padding: 5px;
+  border-bottom: 3px solid #472015;
+  padding: 5px 18px;
+  margin: 0px auto 27px;
+  font-size: 12px;
+  &:hover {
+    background-color: color(secondaryBtn);
+    border-color: color(borderOnlyColor);
+  }
+}
+
+.fb-btn {
+  background-color: color(colorText);
+  border-color: color(colorText);
+  font-size: 16px;
+  font-weight: 500;
+  color: color(messageBtn);
+  /* margin-right: -76px; */
+  padding: 9px;
+  padding-left: 23px;
+  padding-right: 23px;
+  position: relative;
+}
+
+.fb-btn:hover {
+  background-color: rgb(194, 194, 194);
+  border-color: rgb(194, 194, 194);
+  color: color(messageBtn);
+}
